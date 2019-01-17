@@ -8,9 +8,9 @@ then
 fi
 cd sensory-alexa
 git reset --hard > /dev/null
-cp -r /home/root/Alexa_SDK/TrulyHandsfreeSDK/6.4.0/lib/aarch64-linux-gnu/libsnsr.a /usr/lib/sensory-alexa/lib/libsnsr.a
-cp -r /home/root/Alexa_SDK/TrulyHandsfreeSDK/6.4.0/model/enrolled-sv.snsr /usr/lib/sensory-alexa/models/spot-alexa-rpi-31000.snsr
-cp -r /home/root/Alexa_SDK/TrulyHandsfreeSDK/6.4.0/include/snsr.h /usr/lib/sensory-alexa/include/snsr.h
+cp -r /home/root/Alexa_SDK/libsnsr.a /usr/lib/sensory-alexa/lib/libsnsr.a
+cp -r /home/root/Alexa_SDK/enrolled-sv.snsr /usr/lib/sensory-alexa/models/spot-alexa-rpi-31000.snsr
+cp -r /home/root/Alexa_SDK/snsr.h /usr/lib/sensory-alexa/include/snsr.h
 if [ ! -d "/home/root/Alexa_SDK/avs-sdk-client/Integration/inputs/SensoryModels" ]
 then
  mkdir -p /home/root/Alexa_SDK/avs-sdk-client/Integration/inputs/SensoryModels
